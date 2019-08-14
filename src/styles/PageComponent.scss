@@ -1,0 +1,81 @@
+.page-container{
+    overflow: hidden;
+    border:1px;
+    background-color:rgb(233, 220, 220);
+    border-radius: 5px;
+    height: max-content;
+}
+.page-container .page-item{
+    padding: 2px;
+    border-radius: 5px;
+    margin: 15px;
+    background-color:white;/* rgb(104, 85, 129);*/
+    box-shadow:
+        0 1px 3px rgba(0,0,0,1)
+    
+}
+.page-container .page-item .new-badge-hidden{
+    display: none;
+}
+
+.page-container .page-item .new-badge{
+    border-bottom: 50px transparent solid;
+    border-right: 50px #07ff1b solid;
+    /*float: right;*/
+    width: 60px;
+    height: 40px;
+    position:absolute;
+    top:15px;
+    right:30px;
+
+}
+
+.page-container .page-item .new-badge .rotate-span{
+    width:50px;
+    height: 20px;
+    text-align: center;
+    transform: rotate(45deg);
+    float: right;
+    position: relative;
+    top:9px;
+    right:-58px;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+.page-container .page-item .page-item-header 
+{
+    margin-bottom: 10px;
+    height: 50px;
+    border-bottom: 2px gray solid;
+}
+
+.page-container .page-item .page-item-header .page-item-title
+{
+    font-weight: 600;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+}
+
+.page-container .page-item .page-item-header .page-item-img
+{
+    width: 50px;
+    margin: 10px;
+    float: left;
+}
+
+.page-container .page-item .img-not-found
+{
+    display:none;
+}
+
+.page-container  .page-item-info {
+    text-align: justify;
+    padding: 10px;
+    font-family: nazanin ,tahoma,'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: black;
+    line-height: 28px;
+}
