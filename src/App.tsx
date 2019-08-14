@@ -37,7 +37,7 @@ class App extends React.Component {
 
         <div className="App">
           <header className="App-header">
-            <h1 className="App-title">React Sample Demo</h1>
+            <h1 className="App-title">React App Demo</h1>
             <div className="title">
               <div className="app-time">
                 <TimeComponent />
@@ -47,13 +47,13 @@ class App extends React.Component {
           <div className="app-menubar ">
             <div className="menu-icon " onClick={this.menuOnClick}>.</div>
             <div className="row" ref={this.menuDropdownRef}>
-              <div className="col-2">
+              <div className="col-4">
                 <Link to="/" >Home</Link>
               </div>
-              <div className="col-2">
-                <Link to="/ContactUs" >Contact us</Link></div>
-              <div className="col-2">
-                <Link to="/AboutUs" >About us</Link></div>
+              <div className="col-4">
+                <Link to="/ContactUs" >ContactUs</Link></div>
+              <div className="col-4">
+                <Link to="/AboutUs" >AboutUs</Link></div>
             </div>
           </div>
           <div className="pages-container">
