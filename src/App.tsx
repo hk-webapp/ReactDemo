@@ -33,7 +33,7 @@ class App extends React.Component {
 
   public render() {
     return (
-      <Router basename="/ReactSampleDemo">
+      <Router basename="/ReactDemo">
 
         <div className="App">
           <header className="App-header">

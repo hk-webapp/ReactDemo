@@ -50,7 +50,8 @@ class ContactUs extends React.Component<IContacUsProps, IContacUsState> {
     public render() {
         document.title = "Countact us";
 
-        return (<div className="contact-us-form" ><div className="desc-top">Please send to us, your opinins and suggestions. </div>
+        return (<div className="contact-us-form" ><div className="desc-top">
+            Please send to us, your opinions and suggestions. </div>
             <div className="form-group">
                 <label>Name
 
