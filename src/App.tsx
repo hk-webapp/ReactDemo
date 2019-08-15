@@ -1,8 +1,9 @@
 import "bootstrap/scss/bootstrap.scss"
 import * as $ from 'jquery'
 import * as React from 'react';
-import { Link } from 'react-router-dom'
+import { Nav, Navbar } from 'react-bootstrap'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import './App.scss';
 import AboutUs from './components/AboutUs';
 import ContactUs from './components/ContactUs';
@@ -44,26 +45,27 @@ class App extends React.Component {
               </div>
             </div>
           </header>
-          <div className="app-menubar ">
-            <div className="menu-icon " onClick={this.menuOnClick}>.</div>
-            <div className="row" ref={this.menuDropdownRef}>
-              <div className="col-4">
-                <Link to="/" >Home</Link>
-              </div>
-              <div className="col-4">
-                <Link to="/ContactUs" >ContactUs</Link></div>
-              <div className="col-4">
-                <Link to="/AboutUs" >AboutUs</Link></div>
-            </div>
+          <div className="app-menubar">
+            <Navbar className="navbar navbar-inverse" expand="md" bg="drak" variant="dark">
+              <Navbar.Toggle aria-controls="myNavbar" />
+              <Navbar.Collapse className="navbar-right" id="myNavbar">
+                <Nav className="mr-auto">
+                  <Nav.Item ><NavLink to="/Home" activeClassName="active-page" className="nav-link ">Home</NavLink></Nav.Item>
+                  <Nav.Item ><NavLink to="/ContactUs" activeClassName="active-page" className="nav-link">Contact Us</NavLink></Nav.Item>
+                  <Nav.Item ><NavLink to="/AboutUs" activeClassName="active-page" className="nav-link">About Us</NavLink></Nav.Item>
+                </Nav>
+              </Navbar.Collapse>
+            </Navbar>
           </div>
           <div className="pages-container">
             <Route exact={true} path="/" component={Pages} />
+            <Route path="/Home" component={Pages} />
             <Route path="/ContactUs" component={ContactUs} />
             <Route path="/AboutUs" component={AboutUs} />
             <Route path="/Page/:Name" component={PageViewer} />
           </div>
           <OfflineComponent />
-          <div className="App-footer">@Copy right</div>
+          <div className="App-footer">@Copy 2019</div>
         </div>
       </Router>
 
