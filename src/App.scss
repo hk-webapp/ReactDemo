@@ -97,7 +97,8 @@
     padding-top: 40px;
   }
   .pages-container {
-    height: calc(100vh - 180px);
+    overflow: hidden;
+    height: max-content;
   }
 }
 
