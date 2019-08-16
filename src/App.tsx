@@ -65,7 +65,7 @@ class App extends React.Component {
             <Route path="/Page/:Name" component={PageViewer} />
           </div>
           <OfflineComponent />
-          <div className="App-footer">@Copy 2019</div>
+          <div className="App-footer">@Copy 2019 (version 1.0)</div>
         </div>
       </Router>
 
