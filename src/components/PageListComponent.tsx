@@ -44,7 +44,7 @@ class PageListComponent extends React.Component<IProps, IIntroPagesState> {
   public render() {
     return (
       <div className="page-container">
-        <div className="row" >
+        <div className="ss-row" >
           {this.props.items.map((info, index) => {
             return <ItemTemp key={index} info={info} index={index} />
           })}
