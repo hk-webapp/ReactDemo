@@ -15,7 +15,7 @@ importScripts("/ReactDemo/workbox-v3.6.3/workbox-sw.js");
 workbox.setConfig({modulePathPrefix: "/ReactDemo/workbox-v3.6.3"});
 
 importScripts(
-  "/ReactDemo/precache-manifest.c79e045b60c643ddb9feb8e4ac20da4b.js"
+  "/ReactDemo/precache-manifest.ac0221f2acd8b242d96006701e8ff7b3.js"
 );
 
 workbox.clientsClaim();
