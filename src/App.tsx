@@ -7,7 +7,6 @@ import { NavLink } from 'react-router-dom'
 import './App.scss';
 import AboutUs from './components/AboutUs';
 import ContactUs from './components/ContactUs';
-import OfflineComponent from './components/OfflineComponent'
 import Pages from './components/Pages'
 import PageViewer from './components/PageViewer';
 import TimeComponent from './components/TimeComponent'
@@ -64,8 +63,7 @@ class App extends React.Component {
             <Route path="/AboutUs" component={AboutUs} />
             <Route path="/Page/:Name" component={PageViewer} />
           </div>
-          <OfflineComponent />
-          <div className="App-footer">@Copy 2019 (version 1.0)</div>
+          <div className="App-footer">@Copy 2019 (version 2.0)</div>
         </div>
       </Router>
 

@@ -1,23 +1,23 @@
 import { CONTACT_US_CHANGE_DESC, CONTACT_US_CHANGE_EMAIL, CONTACT_US_CHANGE_NAME } from './actionConstant';
 import { IContactUsChangeDescAction, IContactUsChangeEmailAction, IContactUsChangeNameAction } from './actionTypes';
 
-export function ChangeNameAction(name: string): IContactUsChangeNameAction {
+export function ChangeNameAction(surname: string): IContactUsChangeNameAction {
     return {
-        Name: name,
+        name: surname,
         type: CONTACT_US_CHANGE_NAME,
     }
 }
 
-export function ChangeDescAction(desc: string): IContactUsChangeDescAction {
+export function ChangeDescAction(description: string): IContactUsChangeDescAction {
     return {
-        Desc: desc,
+        desc: description,
         type: CONTACT_US_CHANGE_DESC,
     }
 }
 
-export function ChangeEmailAction(email: string): IContactUsChangeEmailAction {
+export function ChangeEmailAction(cEmail: string): IContactUsChangeEmailAction {
     return {
-        Email: email,
+        email: cEmail,
         type: CONTACT_US_CHANGE_EMAIL,
     }
 }

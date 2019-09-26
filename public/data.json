@@ -1,0 +1,50 @@
+[
+    {
+        "Name": "React",
+        "Title": "React",
+        "IntroInfo": "about creating a React project.",
+        "IntroImg": "React.png",
+        "Img": "React.svg",
+        "IsNew": true
+    },
+    {
+        "Title": "javascript",
+        "IntroInfo": "about creating a javascript project.",
+        "IntroImg": "js.png"
+    },
+    {
+        "Name": "Node",
+        "Title": "Node",
+        "IntroInfo": "about how to use and install Node.",
+        "IntroImg": "node.png",
+        "Img": "NodeJs.svg"
+    },
+    {
+        "Name": "آموزش Typescript",
+        "Title": "Typescript",
+        "IntroInfo": "about creating a typescript project.",
+        "IntroImg": "ts.png",
+        "IsNew": true
+    },
+    {
+        "Title": "Angular",
+        "IntroInfo": "about creating a Angular project.",
+        "IntroImg": "Angular.png"
+    },
+    {
+        "Title": "Vue",
+        "IntroInfo": "about creating a Vue project.\n\t this is sample new project.",
+        "IntroImg": "Vue.png",
+        "IsNew": true
+    },
+    {
+        "Title": "jquery",
+        "IntroInfo": "about creating a jquery project.\n\t this is a template for new project.",
+        "IntroImg": ""
+    },
+    {
+        "Title": "web Api",
+        "IntroInfo": "about creating a web api project.",
+        "IntroImg": ""
+    }
+]

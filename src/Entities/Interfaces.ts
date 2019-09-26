@@ -1,18 +1,23 @@
 import { RouteComponentProps } from "react-router-dom";
-import PageIntroInfo from './PageIntroInfo';
 
 export interface IPageListState {
-    loaded: boolean;
-    items: PageIntroInfo[];
-    error: string;
-    LoadData: () => void;
+  loaded: boolean;
+  items: IPageIntroInfo[];
+  error: string;
+  LoadData: () => void;
 }
 export interface IAppComponent {
-    name?: string;
+  name?: string;
 }
 interface IPageViewMatchParams {
-    Name: string;
+  Name: string;
 }
-export interface IPageViewProps extends RouteComponentProps<IPageViewMatchParams> {
+export interface IPageViewProps
+  extends RouteComponentProps<IPageViewMatchParams> {}
 
+export interface IPageIntroInfo {
+  IntroImg: string;
+  IntroInfo: string;
+  Title: string;
+  IsNew: boolean;
 }

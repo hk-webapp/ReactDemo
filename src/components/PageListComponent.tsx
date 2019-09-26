@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import * as React from 'react';
 import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom'
-import PageIntroInfo from 'src/Entities/PageIntroInfo';
+import {IPageIntroInfo } from 'src/Entities/Interfaces';
 import { getError, getIntroPages, getLoaded } from 'src/reducers/IntroPagesReducer';
 import { IIntroPagesState } from 'src/Store/AllStates';
 import { IAppState } from 'src/Store/store';
@@ -10,11 +10,11 @@ import '../styles/PageComponent.scss'
 
 interface IProps {
   error: string,
-  items: PageIntroInfo[],
+  items: IPageIntroInfo[],
   loaded: boolean,
 }
 interface IItemPeops {
-  info: PageIntroInfo,
+  info: IPageIntroInfo,
   index: number
 }
 

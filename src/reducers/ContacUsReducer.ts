@@ -15,17 +15,17 @@ export function ContactUsProducer(state: IContacUsState = initState, action: Con
         case CONTACT_US_CHANGE_NAME:
             return {
                 ...state,
-                Name: action.Name,
+                Name: action.name,
             }
         case CONTACT_US_CHANGE_EMAIL:
             return {
                 ...state,
-                Email: action.Email,
+                Email: action.email,
             }
         case CONTACT_US_CHANGE_DESC:
             return {
                 ...state,
-                Desc: action.Desc,
+                Desc: action.desc,
             }
         default:
             return state;

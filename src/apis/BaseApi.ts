@@ -1,6 +1,4 @@
 import axios from 'axios'
-import { resolve } from 'path';
-import { reject } from 'q';
 
 export default class BaseApi {
 
@@ -8,24 +6,14 @@ export default class BaseApi {
         baseURL: ""
     });
 
-    public get(url: string, data: any) {
-        this.axiosObj.get(url)
+    public get(url: string,config:{}={}) {
+        return this.axiosObj.get(url,config)
             .then((response: any) => {
-                resolve(response);
+                return response;
             })
             .catch(error => {
-                reject(error);
-            });
-    }
-
-    public post(url: string, config: any) {
-
-        this.axiosObj.post(url,config)
-            .then((response: any) => {
-                resolve(response);
-            })
-            .catch(error => {
-                reject(error);
+                // tslint:disable-next-line: no-console
+                console.log(error);
             });
     }
 }

@@ -118,6 +118,14 @@
 .page-viewer-container {
   height: 90%;
   width: 100%;
+  padding: 30px;
+  h2 {
+    padding: 20px;
+  }
+  .content-title {
+    font-size: 20px;
+    color: red;
+  }
 }
 
 .time-container {

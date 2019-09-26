@@ -1,4 +1,4 @@
-import PageIntroInfo from 'src/Entities/PageIntroInfo';
+import {IPageIntroInfo}from 'src/Entities/Interfaces';
 
 // tslint:disable-next-line: no-empty-interface
 export interface IState{
@@ -8,7 +8,7 @@ export interface IAppMainState{
     isOffline:boolean;
 }
 export interface IIntroPagesState extends IState{
-    items:PageIntroInfo[] ,
+    items:IPageIntroInfo[] ,
     error:string,
     loaded:boolean
 }
