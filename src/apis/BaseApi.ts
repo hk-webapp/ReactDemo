@@ -3,7 +3,7 @@ import axios from 'axios'
 export default class BaseApi {
 
     private axiosObj = axios.create({
-        baseURL: "/ReactDemo"
+        baseURL: process.env.PUBLIC_URL
     });
 
     public get(url: string,config:{}={}) {

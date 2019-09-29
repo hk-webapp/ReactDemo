@@ -1,5 +1,6 @@
-import "bootstrap/scss/bootstrap.scss"
-import * as $ from 'jquery'
+import '@babel/polyfill';
+import "bootstrap/scss/bootstrap.scss";
+import * as $ from 'jquery';
 import * as React from 'react';
 import { Nav, Navbar } from 'react-bootstrap'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
