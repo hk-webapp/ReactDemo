@@ -3,6 +3,7 @@ import {
   CONTACT_US_CHANGE_DESC,
   CONTACT_US_CHANGE_EMAIL,
   CONTACT_US_CHANGE_NAME,
+  FETCH_INTROPAGES,
   FETCH_INTROPAGES_FAIL,
   FETCH_INTROPAGES_SUCCESS
 } from "./actionConstant";
@@ -10,18 +11,20 @@ import {
 export interface ILoadSuccessIntroPagesAction {
   type: typeof FETCH_INTROPAGES_SUCCESS;
   items: IPageIntroInfo[];
-  loaded: boolean;
 }
 
 export interface ILoadFailIntroPagesAction {
   type: typeof FETCH_INTROPAGES_FAIL;
-  loaded: boolean;
   error: string;
+}
+export interface ILoadIntroPagesAction {
+  type: typeof FETCH_INTROPAGES;
 }
 
 export type IntroPagesActionTypes =
   | ILoadSuccessIntroPagesAction
-  | ILoadFailIntroPagesAction;
+  | ILoadFailIntroPagesAction
+  |ILoadIntroPagesAction;
 
 export interface IContactUsChangeNameAction {
   type: typeof CONTACT_US_CHANGE_NAME;

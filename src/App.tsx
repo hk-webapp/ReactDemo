@@ -10,6 +10,7 @@ import AboutUs from './components/AboutUs';
 import ContactUs from './components/ContactUs';
 import Pages from './components/Pages'
 import PageViewer from './components/PageViewer';
+import Tester from './components/tester'
 import TimeComponent from './components/TimeComponent'
 
 class App extends React.Component {
@@ -53,6 +54,7 @@ class App extends React.Component {
                   <Nav.Item ><NavLink to="/Home" activeClassName="active-page" className="nav-link ">Home</NavLink></Nav.Item>
                   <Nav.Item ><NavLink to="/ContactUs" activeClassName="active-page" className="nav-link">Contact Us</NavLink></Nav.Item>
                   <Nav.Item ><NavLink to="/AboutUs" activeClassName="active-page" className="nav-link">About Us</NavLink></Nav.Item>
+                  <Nav.Item ><NavLink to="/tester" activeClassName="active-page" className="nav-link">test Us</NavLink></Nav.Item>
                 </Nav>
               </Navbar.Collapse>
             </Navbar>
@@ -63,6 +65,7 @@ class App extends React.Component {
             <Route path="/ContactUs" component={ContactUs} />
             <Route path="/AboutUs" component={AboutUs} />
             <Route path="/Page/:Name" component={PageViewer} />
+            <Route path="/tester" component={Tester} />
           </div>
           <div className="App-footer">@Copy 2019 (version 2.0)</div>
         </div>
